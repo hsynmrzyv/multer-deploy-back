@@ -40,7 +40,10 @@ const Header = ({ openModal }) => {
         <div className="flex items-center">
           {/* New Todo Button */}
           <div className="shrink-0 flex gap-2">
-            <button className="shadow-sm text-white font-medium text-sm py-2 px-3  rounded-md inline-flex items-center relative gap-x-1.5 border-2 border-white">
+            <button
+              onClick={logOutHandler}
+              className="shadow-sm text-white font-medium text-sm py-2 px-3  rounded-md inline-flex items-center relative gap-x-1.5 border-2 border-white"
+            >
               Log out
             </button>
             <button

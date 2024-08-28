@@ -52,11 +52,14 @@ const Modal = ({ closeModal }) => {
     }
 
     try {
-      const response = await fetch("https://pf201.onrender.com/api/auth/update", {
-        method: "POST",
-        body: formDataWithFile,
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://pf201.onrender.com/api/auth/update",
+        {
+          method: "POST",
+          body: formDataWithFile,
+          credentials: "include",
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();

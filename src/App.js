@@ -14,13 +14,13 @@ import Cookies from "js-cookie";
 const App = () => {
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const jwt = Cookies.get("jwt"); // Check if the cookie exists
+  useEffect(() => {
+    const jwt = Cookies.get("jwt"); // Check if the cookie exists
 
-  //   if (!jwt) {
-  //     navigate("/sign-in"); // Navigate to sign-in page if the cookie is not found
-  //   }
-  // }, [navigate]);
+    if (!jwt) {
+      navigate("/sign-in"); // Navigate to sign-in page if the cookie is not found
+    }
+  }, [navigate]);
 
   return (
     <Routes>
