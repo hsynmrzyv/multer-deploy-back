@@ -19,8 +19,6 @@ const Header = ({ openModal }) => {
     navigate("/sign-in");
   };
 
-  console.log(user);
-
   return (
     <header>
       <nav className="bg-gray-800 flex justify-between h-16 px-2 rounded-lg">
@@ -42,10 +40,7 @@ const Header = ({ openModal }) => {
         <div className="flex items-center">
           {/* New Todo Button */}
           <div className="shrink-0 flex gap-2">
-            <button
-              onClick={logOutHandler}
-              className="shadow-sm text-white font-medium text-sm py-2 px-3  rounded-md inline-flex items-center relative gap-x-1.5 border-2 border-white"
-            >
+            <button className="shadow-sm text-white font-medium text-sm py-2 px-3  rounded-md inline-flex items-center relative gap-x-1.5 border-2 border-white">
               Log out
             </button>
             <button
