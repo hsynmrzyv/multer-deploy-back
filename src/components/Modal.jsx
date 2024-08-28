@@ -52,7 +52,7 @@ const Modal = ({ closeModal }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api/auth/update", {
+      const response = await fetch("https://pf201.onrender.com/api/auth/update", {
         method: "POST",
         body: formDataWithFile,
         credentials: "include",
@@ -90,7 +90,7 @@ const Modal = ({ closeModal }) => {
             <div className="h-16 w-16 rounded-full bg-white border-2 border-white mb-3 shadow-lg">
               {user.profilePic ? (
                 <img
-                  src={`http://localhost:8000/${user.profilePic}`}
+                  src={`https://pf201.onrender.com/${user.profilePic}`}
                   alt=""
                   className="rounded-full"
                 />
@@ -175,7 +175,7 @@ const Modal = ({ closeModal }) => {
                   <img src={imageUrl} alt="" className="w-8 h-8 rounded-full" />
                 ) : user.profilePic ? (
                   <img
-                    src={`http://localhost:8000/${user.profilePic}`}
+                    src={`https://pf201.onrender.com/${user.profilePic}`}
                     alt=""
                     className="w-8 h-8 rounded-full"
                   />

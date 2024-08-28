@@ -11,7 +11,7 @@ const Header = ({ openModal }) => {
   const navigate = useNavigate();
 
   const logOutHandler = async () => {
-    await fetch("http://localhost:8000/api/auth/log-out", {
+    await fetch("https://pf201.onrender.com/api/auth/log-out", {
       method: "POST",
       credentials: "include",
     });
@@ -60,7 +60,7 @@ const Header = ({ openModal }) => {
           <div className="ml-4 shrink-0">
             {user.profilePic ? (
               <img
-                src={`http://localhost:8000/${user.profilePic}`}
+                src={`https://pf201.onrender.com/${user.profilePic}`}
                 alt=""
                 className="w-8 h-8 rounded-full"
               />
